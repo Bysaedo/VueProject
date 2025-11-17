@@ -1,3 +1,4 @@
+<!--Options(too rigid)-->
 <script>
 export default {
   data() {
