@@ -1,3 +1,4 @@
+<!--Browse job and add job cards -->
 <script setup>
 import Card from "@/components/Card.vue";
 import { RouterLink } from "vue-router";

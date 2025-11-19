@@ -1,9 +1,11 @@
+<!--Add job page -->
 <script setup>
-import { reactive } from "vue";
-import router from "@/router";
-import { useToast } from "vue-toastification";
-import axios from "axios";
+import { reactive } from "vue"; //Stores form data
+import router from "@/router"; //Allows navigation after success
+import { useToast } from "vue-toastification"; //Shows state message
+import axios from "axios"; //Sends POST request
 
+//FORM
 const form = reactive({
   type: "Full-Time",
   title: "",

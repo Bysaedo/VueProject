@@ -1,7 +1,9 @@
+<!-- Nav Bar -->
 <script setup>
 import { RouterLink, useRoute } from "vue-router";
 import logo from "@/assets/img/logo.png";
 
+//Returns tru if link path matches the current route
 const isActiveLink = (routePath) => {
   const route = useRoute();
   return route.path === routePath;

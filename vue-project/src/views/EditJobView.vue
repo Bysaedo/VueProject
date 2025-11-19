@@ -7,7 +7,7 @@ import axios from "axios";
 
 const route = useRoute();
 
-const jobId = route.params.id;
+const jobId = route.params.id; //Gets job ID from the url
 const form = reactive({
   type: "Full-Time",
   title: "",
@@ -53,6 +53,7 @@ const handleSubmit = async () => {
   }
 };
 
+//Fetch job data on page load
 onMounted(async () => {
   try {
     const response = await axios.get(`/api/jobs/${jobId}`);

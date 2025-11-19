@@ -1,3 +1,4 @@
+<!-- Displays one job card inside the job list-->
 <script setup>
 import { defineProps, ref, computed } from "vue";
 import { RouterLink } from "vue-router";

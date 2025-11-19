@@ -1,6 +1,8 @@
+<!--Header section at the top of the home page -->
 <script setup>
 import { defineProps } from "vue";
 
+//Accepts the customizable props
 defineProps({
   title: {
     type: String,

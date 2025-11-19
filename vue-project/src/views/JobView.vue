@@ -1,3 +1,4 @@
+<!-- Single Job page-->
 <script setup>
 import PulseLoader from "vue-spinner/src/PulseLoader.vue";
 import BackButton from "@/components/BackButton.vue";

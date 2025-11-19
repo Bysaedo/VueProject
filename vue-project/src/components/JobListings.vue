@@ -1,3 +1,4 @@
+<!--Displays all the jobs cards from jobListing-->
 <script setup>
 import { RouterLink } from "vue-router";
 import JobListing from "./JobListing.vue";
@@ -6,18 +7,19 @@ import PulseLoader from "vue-spinner/src/PulseLoader.vue";
 import axios from "axios";
 
 defineProps({
-  limit: Number,
+  limit: Number, //Define in HomeView.vue
   showButton: {
     type: Boolean,
     default: false,
   },
 });
-
+//Show spinner while loading
 const state = reactive({
   jobs: [],
   isLoading: true,
 });
 
+//Displays list when done
 onMounted(async () => {
   try {
     const response = await axios.get("/api/jobs");
